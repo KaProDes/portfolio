@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <video id="fullscreenVideo" class="fullscreen-video" autoplay muted loop>
+        <source src="./assets/anim.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <!-- Profile Selection Screen -->
+    <div class="profile-screen" id="profileScreen">
+        <h1 class="profile-title">Who's watching?</h1>
+        <div class="profile-wrap" onclick="startPortfolio()">
+            <div class="profile-icon">
+                <img src="./assets/user.png" alt="Profile Picture" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+            </div>
+            <div class="profile-name">Guest</div>
+        </div>
+        <div>Made for and by <a style="color: #e50914;" target="_blank" href="https://www.linkedin.com/in/kapil-d/">Kapil Deshmukh</a> </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content" id="mainContent">
+        <nav>
+            <div class="nav-content">
+                <a class="logo nav-link" data-section="basic-info">NETFLIX</a>
+                <div class="nav-links">
+                    <a href="#" class="nav-link active" data-section="basic-info">Basic Info</a>
+                    <a href="#" class="nav-link" data-section="experience">Work Experience</a>
+                    <a href="#" class="nav-link" data-section="connect">Connect</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Basic Info Section -->
+        <section class="content-section active" id="basic-info">
+
+            
+            <h2 class="section-title">Basic Info</h2>
+
+            <div class="synopsis">
+                <p>
+                    <strong>Synopsis:</strong> Full stack software engineer with 3+ years of production experience building web-based solutions that scale. 
+                    I have a strong foundation in backend development, cloud infrastructure, and frontend technologies. I am passionate about 
+                    building scalable and maintainable software solutions that solve real-world problems.
+                </p>
+                <p>
+                    <em>Go-getter.</em> Mentor. <em> Problem Solver.</em> 
+                </p>
+
+                <p>I am always looking for opportunities to learn and grow.</p>
+            </div>
+
+            <div class="section-row">
+                <h3 class="row-title">About me & my skills</h3>
+                <div class="cards-grid">
+                    <div class="content-card">
+                        <img src="./assets/profile_pic.png" alt="Placeholder" class="card-image">
+                        <div class="card-content">
+                            <p class="card-subtitle">Hey, I am</p>
+                            <h4 class="card-title">Kapil P Deshmukh 👋</h4>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <img src="./assets/be.png" alt="Placeholder" class="card-image">
+                        <div class="card-content">
+                            <h4 class="card-title">Backend Development</h4>
+                            <p class="card-subtitle">TypeScript + NodeJS, Firebase, Flask.</p>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <img src="./assets/fe.png" alt="Placeholder" class="card-image">
+                        <div class="card-content">
+                            <h4 class="card-title">Frontend Development</h4>
+                            <p class="card-subtitle">React/Redux, HTML5, CSS3, JavaScript, EJS.</p>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <img src="./assets/db.png" alt="Placeholder" class="card-image">
+                        <div class="card-content">
+                            <h4 class="card-title">Databases</h4>
+                            <p class="card-subtitle">PostgreSQL, MongoDB, MySQL.</p>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <img src="./assets/cloud.png" alt="Placeholder" class="card-image">
+                        <div class="card-content">
+                            <h4 class="card-title">Cloud Infrastructure</h4>
+                            <p class="card-subtitle">AWS S3, Lambda, EC2, RDS and Cloudwatch.</p>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <img src="./assets/git.png" alt="Placeholder" class="card-image">
+                        <div class="card-content">
+                            <h4 class="card-title">Other Misc</h4>
+                            <p class="card-subtitle">Low Level Design, Git, Java, C++, GraphQL</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-row">
+                <h3 class="row-title">Education</h3>
+                <div class="cards-grid">
+                    <div class="content-card">
+                        <img src="./assets/iitg.png" alt="Placeholder" class="card-image">
+                        <div class="card-content">
+                            <h4 class="card-title">MTech | Computer Science</h4>
+                            <p class="card-subtitle">IIT Guwhati</p>
+                            <p class="card-subtitle">Dropped out - withdrew candidature in order to gain profession experience</p>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <img src="./assets/muj.png" alt="Placeholder" class="card-image">
+                        <div class="card-content">
+                            <h4 class="card-title">BTech | Computer Science</h4>
+                            <p class="card-subtitle">Manipal University Jaipur</p>
+                            <p class="card-subtitle">9.80 GPA</p>
+                        </div>
+                    </div>
+                    <div class="content-card skeleton"></div>
+                    <div class="content-card skeleton"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="content-section" id="experience">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="section-row">
+                <h3 class="row-title">Current Role</h3>
+                <div class="cards-grid">
+                    <div class="content-card">
+                        <img src="./assets/toddle.png" alt="Placeholder" class="card-image">
+                        <div class="card-content">
+                            <h4 class="card-title">Software Engineer 2</h4>
+                            <p class="card-subtitle">Toddle</p>
+                            <p class="card-subtitle">July 2022-Present</p>
+                        </div>
+                    </div>
+                    <!-- Student Progress Data Export Card -->
+                    <div class="content-card">
+                        <img src="https://placehold.co/400/2f2f2f/969696?text=Data+Export" alt="Data Export Module" class="card-image">
+                        <div class="card-content">
+                            <h4 class="card-title">Data Export Impact</h4>
+                            <p class="card-subtitle">Engineered Student Progress Data Export module</p>
+                            <div class="card-metrics">
+                                <span class="metric">126,000</span>
+                                <span class="metric-label">Hours Saved Globally</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Feature Development Card -->
+                    <div class="content-card">
+                        <img src="https://placehold.co/400/2f2f2f/969696?text=Feature+Development" alt="Feature Development" class="card-image">
+                        <div class="card-content">
+                            <h4 class="card-title">Core Feature Engg</h4>
+                            <p class="card-subtitle">Scaled for International Schools</p>
+                            <div class="card-metrics">
+                                <span class="metric">72</span>
+                                <span class="metric-label">Features with</span>
+                                <span class="metric">5M</span>
+                                <span class="metric-label">Daily Requests</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Performance Optimization Card -->
+                    <div class="content-card">
+                        <img src="https://placehold.co/400/2f2f2f/969696?text=AWS+Optimization" alt="AWS Performance" class="card-image">
+                        <div class="card-content">
+                            <h4 class="card-title">AWS Performance Optimization</h4>
+                            <p class="card-subtitle">Microservices & Lambda Optimization</p>
+                            <div class="card-metrics">
+                                <span class="metric">37%</span>
+                                <span class="metric-label">P90 Response Time Reduction</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- API Development Card -->
+                    <div class="content-card">
+                        <img src="https://placehold.co/400/2f2f2f/969696?text=API+Integration" alt="API Development" class="card-image">
+                        <div class="card-content">
+                            <h4 class="card-title">API & Integration Development</h4>
+                            <p class="card-subtitle">AWS Lambda & Slack Integration</p>
+                            <div class="card-metrics">
+                                <span class="metric">600k+</span>
+                                <span class="metric-label">Global Users</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Leadership Card -->
+                    <div class="content-card">
+                        <img src="https://placehold.co/400/2f2f2f/969696?text=Leadership" alt="Leadership" class="card-image">
+                        <div class="card-content">
+                            <h4 class="card-title">Technical Leadership</h4>
+                            <p class="card-subtitle">Team Growth & Release Management</p>
+                            <div class="card-metrics">
+                                <span class="metric-label">• Onboarding</span>
+                                <span class="metric-label">• Release Audits</span>
+                                <span class="metric-label">• Feature Rollouts</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-row">
+                <h3 class="row-title">Previous Role</h3>
+                <div class="cards-grid">
+                    <div class="content-card">
+                        <img src="./assets/dell.png" alt="Placeholder" class="card-image">
+                        <div class="card-content">
+                            <h4 class="card-title">Software Development Engineer - Intern</h4>
+                            <p class="card-subtitle">Dell</p>
+                            <p class="card-subtitle">June 2021</p>
+                        </div>
+                    </div>
+                    <!-- Main CMS Card -->
+                    <div class="content-card">
+                        <img src="https://placehold.co/400/2f2f2f/969696?text=CMS+System" alt="CMS Development" class="card-image">
+                        <div class="card-content">
+                            <h4 class="card-title">Custom CMS Development</h4>
+                            <p class="card-subtitle">End-to-End Content Management System</p>
+                            <div class="card-metrics">
+                                <span class="metric">300+</span>
+                                <span class="metric-label">Documents Hosted</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Authentication Card -->
+                    <div class="content-card">
+                        <img src="https://placehold.co/400/2f2f2f/969696?text=Auth0+Security" alt="Authentication" class="card-image">
+                        <div class="card-content">
+                            <h4 class="card-title">Security Implementation</h4>
+                            <p class="card-subtitle">Auth0 Integration</p>
+                            <div class="card-metrics">
+                                <span class="metric-label">• Authentication</span>
+                                <span class="metric-label">• Custom Authorization</span>
+                                <span class="metric-label">• Access Control</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Editor Features Card -->
+                    <div class="content-card">
+                        <img src="https://placehold.co/400/2f2f2f/969696?text=Editor+Features" alt="Editor Features" class="card-image">
+                        <div class="card-content">
+                            <h4 class="card-title">Advanced Editing Tools</h4>
+                            <p class="card-subtitle">Integrated Content Editors</p>
+                            <div class="card-metrics">
+                                <span class="metric-label">• Rich Text Editor</span>
+                                <span class="metric-label">• Markdown Support</span>
+                                <span class="metric-label">• HTML Conversion</span>
+                                <span class="metric-label">• Code Sanitization</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Connect Section -->
+        <section class="content-section" id="connect">
+            <h2 class="section-title">Connect With Me</h2>
+            
+            <div class="section-row">
+                <h3 class="row-title">Social Media</h3>
+                <div class="cards-grid">
+                    <a target="_blank" href="https://github.com/KaProDes">
+                        <div class="content-card">
+                            <img src="https://placehold.co/400/2f2f2f/969696?text=Github" alt="Editor Features" class="card-image">
+                            <div class="card-content">
+                                <h4 class="card-title">GitHub</h4>
+                                <p class="card-subtitle">@KaProDes</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://www.linkedin.com/in/kapil-d/">
+                        <div class="content-card">
+                            <img src="https://placehold.co/400/2f2f2f/969696?text=LinkedIn" alt="Editor Features" class="card-image">
+                            <div class="card-content">
+                                <h4 class="card-title">LinkedIn</h4>
+                                <p class="card-subtitle">/in/kapil-d</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://leetcode.com/u/KapProDes/">
+                        <div class="content-card">
+                            <img src="https://placehold.co/400/2f2f2f/969696?text=LeetCode" alt="Editor Features" class="card-image">
+                            <div class="card-content">
+                                <h4 class="card-title">LeetCode</h4>
+                                <p class="card-subtitle">#KapProDes</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="content-card skeleton"></div>
+                    <div class="content-card skeleton"></div>
+                </div>
+            </div>
+
+            <div class="section-row">
+                <h3 class="row-title">Quick Connect</h3>
+                <div class="social-links">
+                    <a target="_blank" href="https://github.com/KaProDes" class="social-link">GitHub</a>
+                    <a target="_blank" href="https://www.linkedin.com/in/kapil-d/" class="social-link">LinkedIn</a>
+                    <a target="_blank" href="https://leetcode.com/u/KapProDes/" class="social-link">LeetCode</a>
+                    <a target="_blank" href="mailto:deshmukhkapil4@gmail.com" class="social-link">Email</a>
+                </div>
+            </div>
+
+            <div class="section-row">
+                <h3 class="row-title">Contact Details</h3>
+                <p>Phone: +91 9767 801 357</p>
+                <p>Email: deshmukhkapil4@gmail.com </p>
+            </div>
+        </section>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
