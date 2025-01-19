@@ -28,6 +28,11 @@ body {
 .profile-wrap {
     cursor: pointer;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .profile-icon {
@@ -248,11 +253,12 @@ nav {
 }
 
 .synopsis {
-    margin-bottom: 2rem;
+    margin: 5vh 0;
     font-size: 1rem;
     line-height: 1.6;
     color: #e5e5e5;
 }
+
 
 .synopsis strong {
     color: white;
@@ -262,6 +268,10 @@ nav {
 .synopsis em {
     color: #e0333c;
     font-style: normal;
+}
+
+.resume_button {
+    margin-top: 1.5rem;
 }
 
 
@@ -291,6 +301,10 @@ nav {
 
     .synopsis {
         margin-top: 10vh;
+    }
+
+    .margin-top {
+        margin-top: 4rem;
     }
 }
 
