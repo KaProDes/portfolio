@@ -276,10 +276,14 @@ nav {
 
 
 @media (max-width: 768px) {
+    nav {
+        position: static;
+    }
+
     .nav-content {
         flex-direction: column;
         align-items: flex-start;
-        margin-bottom: 2rem;
+        /* margin-bottom: 2rem; */
     }
 
     .nav-links {
@@ -299,12 +303,8 @@ nav {
         margin-bottom: 2rem;
     }
 
-    .synopsis {
-        margin-top: 15vh;
-    }
-
-    .margin-top {
-        margin-top: 4rem;
+    .content-section{
+        margin-top: 0;
     }
 }
 
